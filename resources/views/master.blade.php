@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -33,7 +34,60 @@
 <style>
     .custom-login{
         height: 500px;
-        padding-top: 100px;
+        padding-top: 100px;   
     }
+    img.slider-img{
+        height: 400px !important;
+    } 
+    .custom-product{
+        height: 600px;
+    }
+    .slider-text{
+        background-color: #d3c4a2 !important;
+        font-size: 20px;
+    }
+    .trending-img{
+        height: 100px;
+    }
+    .trending-item{
+        float: left;
+        width: 10%;
+        padding: 5px;
+        background-color: #dfe6e9;
+    }
+    .trending-wrapper{
+        margin: 10px;
+        background-color: #b8e994;
+        padding: 2px;
+        text-align: center;
+    }
+    .detail-img{
+        height: 350px;
+
+    }
+    .product-category-detail-page{
+        text-align: center;
+        color: grey;
+    }
+    .btn-buy-now{
+        background-color: #e55039;
+    }
+    .search-box{
+        width: 500px !important;
+    }
+    .searched-wrapper{
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    .searched-img{
+        height: 250px;
+    }
+    .seached-result-heading{
+        text-align: center;
+        padding: 30px;
+        background-color: #f7f1e3;
+    }
+
 </style>
 </html>
