@@ -88,6 +88,11 @@
         padding: 30px;
         background-color: #f7f1e3;
     }
+    .cart-list-divider{
+        border-bottom: 2px solid #cccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px; 
+    }
 
 </style>
 </html>
