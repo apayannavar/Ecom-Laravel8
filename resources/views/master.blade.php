@@ -93,6 +93,10 @@
         margin-bottom: 20px;
         padding-bottom: 20px; 
     }
+    .total-amt-text {
+	font-weight: bold !important;
+}
+
 
 </style>
 </html>

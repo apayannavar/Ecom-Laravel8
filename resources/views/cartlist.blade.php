@@ -1,12 +1,19 @@
+<?php
+use App\Http\Controllers\ProductController;
+
+$total=0;
+if(Session::has('user'))
+{
+  $total= ProductController::cartItem();
+}
+?>
 @extends('master')
 
 @section("content")
 <div class="custom-product">
-
-     
-
         <div class="searched-wrapper">
-            <h2 class="seached-result-heading">Cart List</h2>
+            <a href="ordernow" class="btn btn-success" style="text-align: right">Proceed To Buy ({{$total}})</a>
+            <h2 class="seached-result-heading">Cart List</h2> 
             @foreach ($products as $item)
             <div class="row searched-item cart-list-divider">
                 <div class="col-sm-3">
@@ -29,7 +36,5 @@
             </div>
             @endforeach
         </div>
-
-
 </div>
 @endsection
