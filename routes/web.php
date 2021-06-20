@@ -18,6 +18,11 @@ use App\Http\Controllers\ProductController;
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/logout', function () {
     Session::forget(
         'user'
@@ -26,6 +31,7 @@ Route::get('/logout', function () {
 });
 
 Route::post('/login', [UserController::class, 'login']);
+Route::post('/register', [UserController::class, 'Register']);
 Route::get('/', [ProductController::class, 'index']);
 Route::get('detail/{id}',[ProductController::class,'detail']);
 Route::get('search',[ProductController::class,'search']);
@@ -34,3 +40,4 @@ Route::get('cartlist',[ProductController::class,'cartList']);
 Route::get('removecart/{id}',[ProductController::class,'removeCart']);
 Route::get('ordernow',[ProductController::class,'orderNow']);
 Route::post('orderplace',[ProductController::class,'orderPlace']);
+Route::get('myorders',[ProductController::class,'myOrders']);
