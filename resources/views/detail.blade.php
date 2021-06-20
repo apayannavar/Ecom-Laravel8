@@ -10,7 +10,7 @@
             <a href="/">Go Back</a>
             <h5 class="product-category-detail-page">Category: {{ $product['category'] }}</h5>
             <h2>{{ $product['name'] }}</h2>
-            <h3>{{ $product['price'] }}</h3>
+            <h3><span>&#8377;</span>{{ $product['price'] }}</h3>
             <h4>Details:</h4>
             <h4>{{ $product['description'] }}</h4>
             <br><br>

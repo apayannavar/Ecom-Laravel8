@@ -23,7 +23,7 @@
                     <div class="carousel-caption slider-text">
                         <h2>{{ $item['name'] }}</h2>
                         <p>{{ $item['description'] }}</p>
-                        <p>{{ $item['price'] }}</p>
+                        <p><span>&#8377;</span>{{ $item['price'] }}</p>
                     </div>
                 </a>
             </div>

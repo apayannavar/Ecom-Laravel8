@@ -36,17 +36,18 @@
  
 
               <div>
-                <form action="/action_page.php">
+                <form action="/orderplace" method="POST">
+                  @csrf
                     <div class="form-group">
                      <label for="pwd">Your Address:</label><br>
-                      <textarea type="email" placeholder="Enter your Address" class="form-control" ></textarea>
+                      <textarea name="address" placeholder="Enter your Address" class="form-control" ></textarea>
                     </div>
                     <div class="form-group">
                       <label for="pwd">Payment Method:</label><br>
-                      <input type="radio" name="payment"><span>Cash On Delivery</span><br>
-                      <input type="radio" name="payment"><span>Google Pay</span><br>
-                      <input type="radio" name="payment"><span>PayTm</span><br>
-                      <input type="radio" name="payment"><span>Bitcoin</span>
+                      <input type="radio" value="cash" name="payment"><span>Cash On Delivery</span><br>
+                      <input type="radio" value="cash" name="payment"><span>Google Pay</span><br>
+                      <input type="radio" value="cash" name="payment"><span>PayTm</span><br>
+                      <input type="radio" value="cash" name="payment"><span>Bitcoin</span>
                     </div>
                     <button type="submit" class="btn btn-success">Pace My Order >>></button>
                   </form>
